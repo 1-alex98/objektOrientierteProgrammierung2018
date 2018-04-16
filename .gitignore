@@ -1,2 +1,3 @@
-#ignore output
-/out
+#ignore output and settings
+out
+.idea
