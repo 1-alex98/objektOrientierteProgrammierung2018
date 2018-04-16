@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=Jm7HDGFayvk
 
 Commit and push in Intelij:
 https://www.youtube.com/watch?v=IFfCkYdh4vg
-(with out the email)
+(without the email thingy at the end of the video)
 
 Run a class in intelij:
 just righclick and select Run ;)
