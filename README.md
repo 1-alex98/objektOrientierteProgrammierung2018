@@ -35,3 +35,5 @@ https://www.youtube.com/watch?v=IFfCkYdh4vg
 
 Run a class in intelij:
 just righclick and select Run ;)
+
+Befor I forget, you can not push until I made you a contributer, so pls tell me the email of your GitHub acount first;)
