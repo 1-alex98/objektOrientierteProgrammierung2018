@@ -1,0 +1,14 @@
+0.Lädt die Zahl 5 in den Speicher.
+1.Speichert Inhalt in Variable 1
+2.Lädt die Zahl 3 in den Speicher.
+3.Speichert Inhalt in Variable 2
+4.Lädt Inhalt aus Variable 1 in den Speicher
+5.Lädt Inhalt aus Variable 2 in den Speicher
+6.Multipliziert die sich im Speicher befindlichen Zahlen.
+7.Speichert das Ergebnis in Variable 1
+8.Incrementier Variable 1 um 1
+11.Lädt Variable 1 in den Speicher
+12.Lädt Constante 2 in den Speicher
+13.Dividiert die sich im Speicher befindlichen Zahlen
+14. Speichert das Ergebnis in Variable 1
+15. Beendet den Unteraufruf der Methode

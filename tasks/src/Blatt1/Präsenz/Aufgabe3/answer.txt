@@ -1,0 +1,5 @@
+1. In Zeile 1 fehlt das Semikolon
+2.In Zeile 4, ist der Datentype ein Byte er kann keine 1000(int) aufnehmen (impliziter cast nicht möglich da 1000 zu groß).
+3. In Zeile 7 steht = statt ==
+4. In Zeile 8 fehlt das Semikolon
+5. class wird mit zwei s geschrieben

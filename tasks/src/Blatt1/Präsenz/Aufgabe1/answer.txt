@@ -1,0 +1,3 @@
+1. Die JVM ist eine Virtuelle Machine die den compiliteren abstrakten Java-Byte Code auf einem spezifischen Sytem ausführt.
+2. Ja Cobol und C++.
+3. Für jedes System braucht es eine eigene JVM. Java hat ggf. einen leichten overhead.
