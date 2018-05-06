@@ -5,7 +5,7 @@ import java.text.MessageFormat;
 public class TeilB {
     public static void main(String[] args) {
         if (args.length != 3) {
-            throw new IllegalArgumentException("parameters mustr be given");
+            throw new IllegalArgumentException("parameters must be given");
         }
 
         int i1 = Integer.parseInt(args[0]);

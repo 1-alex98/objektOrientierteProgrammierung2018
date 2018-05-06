@@ -9,6 +9,5 @@ public class TeilA {
         String input = scanner.nextLine();
         System.out.println("Hallo " + input + "!");
         scanner.close();
-
     }
 }
