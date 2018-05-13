@@ -7,7 +7,7 @@ public class Aufgabe2 {
     }
 
     private static void test65() {
-        if (6.5 == 6.5f) {
+        if (6.5d == 6.5f) {
             System.out.println("6.5==6.5f");
         } else {
             System.out.println("6.5!=6.5f");
@@ -15,7 +15,7 @@ public class Aufgabe2 {
     }
 
     private static void test64() {
-        if (6.4 == 6.4f) {
+        if (6.4d == 6.4f) {
             System.out.println("6.4==6.4f");
         } else {
             System.out.println("6.4!=6.4f");

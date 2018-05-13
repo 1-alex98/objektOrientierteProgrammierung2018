@@ -4,12 +4,12 @@ import java.text.MessageFormat;
 
 public class Schiff {
     private final String name;
-    private final double Länge;
+    private final double länge;
     private String kennzeichen;
 
     public Schiff(String name, double länge) {
         this.name = name;
-        Länge = länge;
+        this.länge = länge;
     }
 
     public void setKennzeichen(String kennzeichen) {

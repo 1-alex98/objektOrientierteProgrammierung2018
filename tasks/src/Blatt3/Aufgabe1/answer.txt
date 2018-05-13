@@ -1,0 +1,8 @@
+1 C2::f1
+2 C2::f1
+3 2
+4 C2::f1
+5 C1::f1
+6 C2::f3
+7 Compile Exception can not find method
+8 Runtime Exception (CastException)
