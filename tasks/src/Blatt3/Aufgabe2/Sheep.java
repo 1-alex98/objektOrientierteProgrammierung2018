@@ -9,6 +9,10 @@ public class Sheep implements Cloneable {
         this.fur = fur;
     }
 
+    public Sheep(Sheep sheep) {
+        this(sheep.name, sheep.fur.clone());
+    }
+
     public void shear() {
         fur.length = 0;
     }
@@ -31,7 +35,9 @@ public class Sheep implements Cloneable {
     //This is a deep copy
 
     @Override
-    public Sheep clone() {
-        return new Sheep(name, fur.clone());
+    public Sheep clone() throws CloneNotSupportedException {
+        Sheep clone = (Sheep) super.clone();
+        clone.fur = fur.clone();
+        return clone;
     }
 }
