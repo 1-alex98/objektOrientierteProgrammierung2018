@@ -1,13 +1,13 @@
 package Blatt4.Aufgabe4;
 
-public class Person implements Comparable {
+
+public class Person implements Comparable<Person> {
 
     private String name;
     private String vorname;
     private int plz;
     private String strasse;
     private int hausnr;
-    private Person person;
 
     public Person(String n, String v, int p, String s, int h) {
         name = n;
@@ -21,13 +21,12 @@ public class Person implements Comparable {
         return hausnr;
     }
 
-    public int compareTo(Object o) {
-        person = (Person) o;
-        int vergName = person.name.compareToIgnoreCase(name);
-        int vergVorname = person.vorname.compareToIgnoreCase(vorname);
-        int vergPlz = person.plz - plz;
-        int vergStrasse = person.strasse.compareToIgnoreCase(strasse);
-        int vergHausnr = person.hausnr - hausnr;
+    public int compareTo(Person o) {
+        int vergName = o.name.compareToIgnoreCase(name);
+        int vergVorname = o.vorname.compareToIgnoreCase(vorname);
+        int vergPlz = o.plz - plz;
+        int vergStrasse = o.strasse.compareToIgnoreCase(strasse);
+        int vergHausnr = o.hausnr - hausnr;
 
         if (vergName == 0) {
             if (vergVorname == 0) {

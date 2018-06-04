@@ -20,7 +20,6 @@ public class Main {
     public static class Lastwagen extends Auto {
         int reifen = 8;
 
-        @Override
         int getReifen() {
             return this.reifen;
         }
