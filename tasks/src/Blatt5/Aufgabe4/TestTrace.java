@@ -9,12 +9,12 @@ class CallEg {
         try {
             methodC();
         } catch (ArithmeticException e) {
-            throw e;
+            e.printStackTrace();
         }
     }
 
     public void methodC() throws ArithmeticException {
-        throw new Unsu
+        int i = 9 / 0;
     }
 }
 
