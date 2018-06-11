@@ -1,6 +1,13 @@
+package Blatt5.Aufgabe1;
+
 public class Praktikant extends Angestellter {
-	private String vorname;
-	private String nachname;
-	private int alter;
-	private final int gehalt = 400;
+
+	public Praktikant(String vorname, String nachname, int alter, int gehalt) {
+		super(vorname, nachname, 400, gehalt);
+	}
+
+	@Override
+	public void mehrGeld(int betrag) {
+		//
+	}
 }

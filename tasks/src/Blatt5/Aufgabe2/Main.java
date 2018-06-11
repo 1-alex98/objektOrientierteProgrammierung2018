@@ -8,6 +8,6 @@ public class Main {
         körperList.add(new Quader(new Punkt(1, 2, 3), 2, 4, 7));
         körperList.add(new Kugel(new Punkt(2, 4, 6), 77));
 
-        körperList.forEach(körper -> System.out.println(körper.toString()));
+        körperList.forEach(System.out::println);
     }
 }

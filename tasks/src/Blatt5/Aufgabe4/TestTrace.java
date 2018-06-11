@@ -6,11 +6,15 @@ class CallEg {
     }
 
     public void methodB() throws ArithmeticException {
-        methodC();
+        try {
+            methodC();
+        } catch (ArithmeticException e) {
+            throw e;
+        }
     }
 
     public void methodC() throws ArithmeticException {
-        int i = 9 / 0;
+        throw new Unsu
     }
 }
 
