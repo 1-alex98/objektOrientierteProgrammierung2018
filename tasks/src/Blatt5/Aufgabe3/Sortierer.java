@@ -1,10 +1,12 @@
+package Blatt5.Aufgabe3;
+
 public class Sortierer {
 	public static void main(String[] args) {
 
 		double[] unsortiert = { 4.6, 3.324, 54, -3.32, 5, 7 };
 		double[] sortiert = sortieren(unsortiert);
 
-		
+
 		for (int i = 0; i < sortiert.length; i++) {
 			System.out.print(sortiert[i] + ", ");
 		}
