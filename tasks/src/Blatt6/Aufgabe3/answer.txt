@@ -1,0 +1,5 @@
+a) ok
+b) nicht ok weil dann main Exception deklarieren müsste und auch das Überschreiben nicht geht
+c) ok da andere Methode
+d) Ist ok da FileNOTFOUNDException instanceof IOException
+e) Deklaration throws RuntimeException ist redundant 

@@ -29,6 +29,7 @@ public class FileWatcher implements Runnable {
                 return;
             }
             System.out.println(String.format("File '%s' was modified at '%s'", file.getPath(), LocalDateTime.ofInstant(Instant.ofEpochMilli(lastModified), ZoneId.systemDefault()).format(DateTimeFormatter.ISO_DATE_TIME)));
+            scheduledExecutorService.shutdown();
         }
     }
 }
