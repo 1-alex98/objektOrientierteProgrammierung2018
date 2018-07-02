@@ -1,28 +1,26 @@
 package Blatt7.Aufgabe4;
 
-import java.util.concurrent.ExecutionException;
+import static com.github.nocatch.NoCatch.noCatch;
 
 public class Main {
     public static void main(String[] args){
         long singleTime = messureRunnable(() -> {
             PrimSplitter primSplitter = new PrimSplitter(100000, 1);
-            try {
-                primSplitter.getSplitted(2, 100000);
-                primSplitter.shutdown();
-            } catch (ExecutionException | InterruptedException e) {
-                e.printStackTrace();
-            }
+            noCatch(() -> {
+                        primSplitter.getSplitted(2, 100000);
+                        primSplitter.shutdown();
+                    }
+            );
         });
         //CPU Last ca 25%
 
         long hexTime = messureRunnable(() -> {
             PrimSplitter primSplitter = new PrimSplitter(100000, 8);
-            try {
-                primSplitter.getSplitted(2, 100000);
-                primSplitter.shutdown();
-            } catch (ExecutionException | InterruptedException e) {
-                e.printStackTrace();
-            }
+            noCatch(() -> {
+                        primSplitter.getSplitted(2, 100000);
+                        primSplitter.shutdown();
+                    }
+            );
         });
         //CPU Last ca 80%
 
@@ -32,23 +30,21 @@ public class Main {
 
         singleTime = messureRunnable(() -> {
             PrimSplitter primSplitter = new PrimSplitter(1000000, 1);
-            try {
-                primSplitter.getSplitted(2, 100000);
-                primSplitter.shutdown();
-            } catch (ExecutionException | InterruptedException e) {
-                e.printStackTrace();
-            }
+            noCatch(() -> {
+                        primSplitter.getSplitted(1000000, 1000010);
+                        primSplitter.shutdown();
+                    }
+            );
         });
         //CPU Last ca 25%
 
         hexTime = messureRunnable(() -> {
             PrimSplitter primSplitter = new PrimSplitter(1000000, 8);
-            try {
-                primSplitter.getSplitted(2, 100000);
-                primSplitter.shutdown();
-            } catch (ExecutionException | InterruptedException e) {
-                e.printStackTrace();
-            }
+            noCatch(() -> {
+                        primSplitter.getSplitted(1000000, 1000010);
+                        primSplitter.shutdown();
+                    }
+            );
         });
         //CPU Last ca 80%
 
@@ -63,11 +59,11 @@ public class Main {
          */
     }
 
-    public static synchronized void print(String msg){
+    private static synchronized void print(String msg){
         System.out.println(msg);
     }
 
-    public static long messureRunnable(Runnable runnable){
+    private static long messureRunnable(Runnable runnable){
         long start= System.currentTimeMillis();
         runnable.run();
         return System.currentTimeMillis()-start;

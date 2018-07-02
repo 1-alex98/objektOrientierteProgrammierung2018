@@ -11,12 +11,12 @@ import java.util.concurrent.Executors;
 
 import static com.github.nocatch.NoCatch.noCatch;
 
-public class PrimSplitter {
+class PrimSplitter {
     private final int limit;
     private final ExecutorService executorService;
     private CompletableFuture<List<Integer>> prims;
 
-    public PrimSplitter( int limit, int divide) {
+    PrimSplitter( int limit, int divide) {
         this.limit = limit;
         List<CompletableFuture<List<Integer>>> futureList = new ArrayList<>();
 
@@ -55,7 +55,7 @@ public class PrimSplitter {
 
     }
 
-    public Map<Integer,List<Integer>> getSplitted(int start, int end) throws ExecutionException, InterruptedException {
+    Map<Integer,List<Integer>> getSplitted(int start, int end) throws ExecutionException, InterruptedException {
         Map<Integer,CompletableFuture<List<Integer>>> resultsFuture= new HashMap<>();
         for (;start<=end;start++){
             final int i=start;
@@ -68,7 +68,7 @@ public class PrimSplitter {
         return result;
     }
 
-    public void shutdown(){
+    void shutdown(){
         executorService.shutdown();
     }
 }
