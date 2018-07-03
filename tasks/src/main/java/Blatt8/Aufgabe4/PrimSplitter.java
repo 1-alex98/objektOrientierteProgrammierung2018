@@ -1,7 +1,4 @@
-package Blatt7.Aufgabe4;
-
-import Blatt6.Aufgabe1.Main;
-import com.sun.xml.internal.ws.util.CompletedFuture;
+package Blatt8.Aufgabe4;
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;

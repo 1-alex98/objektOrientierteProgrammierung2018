@@ -1,4 +1,4 @@
-package Blatt8.Aufgabe1;
+package Blatt7.Aufgabe1;
 
 public class DoubleList {
     private DoubleNode head;
