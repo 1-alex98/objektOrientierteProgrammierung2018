@@ -10,5 +10,9 @@ public class Main {
         integerTTree.printPostOrder(integerTTree.getRoot());
         System.out.println("In");
         integerTTree.printInOrder(integerTTree.getRoot());
+        System.out.println("Leveel");
+        integerTTree.printLevelOrder();
+
+
     }
 }
